@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+</head>
+<body>
+    <div>
+        <div class="title">
+            Inventory Management System for Retailers
+            <input type="button" value="Logout">
+        </div><br><br>
+        <div class="button">
+            <button class="button1" id="triggerv"><span>View Items</span> </button>
+            <div class="modalv">
+                <div class="modal-contentv">
+                    <span class="close-buttonv">&times;</span>
+                    <h1 class="heading">View Items</h1>
+                </div>
+            </div>
+        </div>
+        <div class="sec_button">
+            <button class="button1" id="triggera" ><span>Add Item</span></button>
+            <div class="modala">
+                <div class="modal-contenta">
+                    <span class="close-buttona">&times;</span>
+                    <h1 class="heading">Add Item</h1>
+                    <form method="post">
+                        <div>
+                            <input type="text" placeholder="Item name" required>
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Quantity" required>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="third_button">
+            <button class="button1" id="triggeru">Update Item</button>
+            <div class="modalu">
+                <div class="modal-contentu">
+                    <span class="close-buttonu">&times;</span>
+                    <h1 class="heading">Update Item</h1>
+                    <form method="post">
+                        <div>
+                            <input type="text" placeholder="Item name" required>
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Quantity to be updated" required>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="fourth_button">
+            <button class="button1" id="triggerd">Delete Item</button>
+            <div class="modald">
+                <div class="modal-contentd">
+                    <span class="close-buttond">&times;</span>
+                    <h1 class="heading">Delete Item</h1>
+                    <form method="post">
+                        <div>
+                            <input type="text" placeholder="Item name" required>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="../static/js/dashboard.js"></script>
